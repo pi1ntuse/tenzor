@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выбор даты и времени — Барбершоп</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="header__logo">BARBERSHOP</a>
+    <nav class="header__nav">
+      <a href="#" class="header__link">Назад</a>
+      <a href="#" class="header__link header__link--active">Запись</a>
+    </nav>
+  </header>
+
+  <main class="booking">
+    <h1 class="booking__title">Выбор даты и времени</h1>
+    <p class="booking__subtitle">Выберите удобный день и время визита</p>
+
+    <section class="dates" aria-label="Выбор даты">
+      <div class="dates__header">
+        <button class="dates__arrow" id="prevMonth">‹</button>
+        <h2 class="section-title" id="currentMonthYear"></h2>
+        <button class="dates__arrow" id="nextMonth">›</button>
+      </div>
+      <ul class="dates__list" id="datesList"></ul>
+    </section>
+
+    <section class="slots" aria-label="Выбор времени">
+      <h2 class="section-title">Время</h2>
+      <ul class="slots__list" id="slotsList"></ul>
+    </section>
+
+    <button class="btn btn--primary" id="submitBtn">Записаться</button>
+  </main>
+
+  <footer class="footer" id="bottomBar">
+    <p class="footer__text">Выберите дату и время</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
