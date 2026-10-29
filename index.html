@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выбор даты и времени</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="header__logo">BARBERSHOP</a>
+    <nav class="header__nav">
+      <a href="#" class="header__link">Назад</a>
+      <a href="#" class="header__link header__link--active">Запись</a>
+    </nav>
+  </header>
+
+  <main class="booking">
+    <h1 class="booking__title">Выбор даты и времени</h1>
+    <p class="booking__subtitle">Выберите удобный день и время визита</p>
+
+    <section class="dates" aria-label="Выбор даты">
+      <h2 class="section-title">Дата</h2>
+      <ul class="dates__list">
+        <li><button class="date"><span class="date__day">Пн</span><span class="date__num">10</span></button></li>
+        <li><button class="date"><span class="date__day">Вт</span><span class="date__num">11</span></button></li>
+        <li><button class="date date--active"><span class="date__day">Ср</span><span class="date__num">12</span></button></li>
+        <li><button class="date"><span class="date__day">Чт</span><span class="date__num">13</span></button></li>
+        <li><button class="date"><span class="date__day">Пт</span><span class="date__num">14</span></button></li>
+        <li><button class="date"><span class="date__day">Сб</span><span class="date__num">15</span></button></li>
+        <li><button class="date"><span class="date__day">Вс</span><span class="date__num">16</span></button></li>
+      </ul>
+    </section>
+
+    <section class="slots" aria-label="Выбор времени">
+      <h2 class="section-title">Время</h2>
+      <ul class="slots__list">
+        <li><button class="slot">10:00</button></li>
+        <li><button class="slot slot--busy" disabled>10:30</button></li>
+        <li><button class="slot">11:00</button></li>
+        <li><button class="slot slot--busy" disabled>11:30</button></li>
+        <li><button class="slot">12:00</button></li>
+        <li><button class="slot">12:30</button></li>
+        <li><button class="slot slot--busy" disabled>13:00</button></li>
+        <li><button class="slot">13:30</button></li>
+        <li><button class="slot">14:00</button></li>
+        <li><button class="slot">14:30</button></li>
+        <li><button class="slot slot--busy" disabled>15:00</button></li>
+        <li><button class="slot">15:30</button></li>
+      </ul>
+    </section>
+
+    <button class="btn btn--primary">Записаться</button>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2026 Barbershop. Все права защищены.</p>
+  </footer>
+</body>
+</html>
