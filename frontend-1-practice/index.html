@@ -1,60 +1,164 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Выбор даты и времени</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headhunters — Барбершоп</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <a href="#" class="header__logo">BARBERSHOP</a>
-    <nav class="header__nav">
-      <a href="#" class="header__link">Назад</a>
-      <a href="#" class="header__link header__link--active">Запись</a>
-    </nav>
-  </header>
 
-  <main class="booking">
-    <h1 class="booking__title">Выбор даты и времени</h1>
-    <p class="booking__subtitle">Выберите удобный день и время визита</p>
+<header class="header">
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <span class="logo-small">BARBERSHOP</span>
+            <span class="logo-main">HH</span>
+            <span class="logo-year">20&nbsp;&nbsp;18</span>
+            <span class="logo-name">HEADHUNTERS</span>
+        </a>
 
-    <section class="dates" aria-label="Выбор даты">
-      <h2 class="section-title">Дата</h2>
-      <ul class="dates__list">
-        <li><button class="date"><span class="date__day">Пн</span><span class="date__num">10</span></button></li>
-        <li><button class="date"><span class="date__day">Вт</span><span class="date__num">11</span></button></li>
-        <li><button class="date date--active"><span class="date__day">Ср</span><span class="date__num">12</span></button></li>
-        <li><button class="date"><span class="date__day">Чт</span><span class="date__num">13</span></button></li>
-        <li><button class="date"><span class="date__day">Пт</span><span class="date__num">14</span></button></li>
-        <li><button class="date"><span class="date__day">Сб</span><span class="date__num">15</span></button></li>
-        <li><button class="date"><span class="date__day">Вс</span><span class="date__num">16</span></button></li>
-      </ul>
+        <nav class="navigation">
+            <a href="#services">Услуги</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#team">Команда</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="gallery">
+        <div class="container hero-inner">
+            <h1>БАРБЕРШОП (КРУТОЙ)<br>(И ДОРОГОЙ)</h1>
+            <img
+                src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85"
+                alt="Интерьер барбершопа"
+                class="hero-image"
+            >
+        </div>
     </section>
 
-    <section class="slots" aria-label="Выбор времени">
-      <h2 class="section-title">Время</h2>
-      <ul class="slots__list">
-        <li><button class="slot">10:00</button></li>
-        <li><button class="slot slot--busy" disabled>10:30</button></li>
-        <li><button class="slot">11:00</button></li>
-        <li><button class="slot slot--busy" disabled>11:30</button></li>
-        <li><button class="slot">12:00</button></li>
-        <li><button class="slot">12:30</button></li>
-        <li><button class="slot slot--busy" disabled>13:00</button></li>
-        <li><button class="slot">13:30</button></li>
-        <li><button class="slot">14:00</button></li>
-        <li><button class="slot">14:30</button></li>
-        <li><button class="slot slot--busy" disabled>15:00</button></li>
-        <li><button class="slot">15:30</button></li>
-      </ul>
+    <section class="services section" id="services">
+        <div class="container">
+            <h2>НАШИ СТРИЖКИ</h2>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">✂</div>
+                    <h3>Налысо</h3>
+                    <p>Премиум стрижка для всех людей</p>
+                    <strong>От 900р</strong>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">✂</div>
+                    <h3>Подстрижем как попросят</h3>
+                    <p>Уважаем желание каждого</p>
+                    <strong>От 1499р</strong>
+                </article>
+            </div>
+        </div>
     </section>
 
-    <button class="btn btn--primary">Записаться</button>
-  </main>
+    <section class="team section" id="team">
+        <div class="container">
+            <h2>МАСТЕРА</h2>
 
-  <footer class="footer">
-    <p class="footer__text">© 2026 Barbershop. Все права защищены.</p>
-  </footer>
+            <div class="team-grid">
+                <article class="master-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=85" alt="Артем">
+                    <h3>Артем</h3>
+                    <span>БАРБЕР</span>
+                    <p>6 лет опыта. Умеет позировать на камеру и делать серьезное лицо</p>
+                </article>
+
+                <article class="master-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=85" alt="Иван">
+                    <h3>Иван</h3>
+                    <span>НУБЕЙМ</span>
+                    <p>1 год работы. Просто чел для рекламы</p>
+                </article>
+
+                <article class="master-card">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=85" alt="Дмитрий">
+                    <h3>Дмитрий</h3>
+                    <span>БАРБЕР</span>
+                    <p>3 года опыта. Учился подстригать на себе</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <h2>ОТЗЫВЫ</h2>
+
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="stars">☆☆☆☆☆</div>
+                    <p>«Первый раз попробовал услугу королевского бритья у Дмитрия. Это просто восторг и полный релакс! Горячее полотенце, идеальная гладкость. Рекомендую.»</p>
+                    <div class="review-author">
+                        <strong>Егор С.</strong>
+                        <span>Неделю назад</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">☆☆☆☆☆</div>
+                    <p>«Первый раз попробовал услугу королевского бритья у Дмитрия. Это просто восторг и полный релакс! Горячее полотенце, идеальная гладкость. Рекомендую.»</p>
+                    <div class="review-author">
+                        <strong>Егор С.</strong>
+                        <span>Неделю назад</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">☆☆☆☆☆</div>
+                    <p>«Первый раз попробовал услугу королевского бритья у Дмитрия. Это просто восторг и полный релакс! Горячее полотенце, идеальная гладкость. Рекомендую.»</p>
+                    <div class="review-author">
+                        <strong>Егор С.</strong>
+                        <span>Неделю назад</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="map-placeholder">
+                <span>МЫ ЖДЁМ ВАС В HEADHUNTERS</span>
+                <p>Москва, ул. Садовая, 15</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="contacts">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">HH</div>
+                <p>Дружелюбное описание услуг</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>КОНТАКТЫ</h3>
+                <p>⌖ &nbsp; ул. Садовая, 15, Москва</p>
+                <a href="tel:+74951234567">☎ &nbsp; +7 (495) 123-45-67</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>РЕЖИМ РАБОТЫ</h3>
+                <p>Пн–Пт: 9:00 – 21:00</p>
+                <p>Сб–Вс: 10:00 – 19:00</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026. Все права защищены.</span>
+            <a href="#contacts">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
